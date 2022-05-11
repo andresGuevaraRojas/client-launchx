@@ -33,7 +33,7 @@
 </template>
 <script>
 
-import ExplorerService from "../services/ExplorerService";
+import ExplorerService from "../../services/ExplorerService";
 
 export default {
   name: "explorer-list",
