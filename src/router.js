@@ -3,13 +3,13 @@ const routes =  [
   {
     path: "/",
     alias: "/missionCommanders",
-    name: "missioncommander-list",
+    name: "missioncommanders",
     component: () => import("./components/missionCommanders/MissionCommaderList")
   },
   {
-    path: "/explorer/:id",
-    name: "explorer-details",
-    component: () => import("./components/explorers/Explorer")
+    path: "/missionCommander/:id",
+    name: "missionCommander-details",
+    component: () => import("./components/missionCommanders/MissionCommander")
   },
   {
     path: "/add",
