@@ -1,24 +1,20 @@
-# vue-3-crud
+# Cliente web - App VueJs
 
-## Project setup
-```
-npm install
-```
+Con el objetivo de facilitar la interacción con la api anteriormente desarrollada [ApiConPrismaDB](https://github.com/andresGuevaraRojas/ApiConPrismaDB) se opto por desarrollar una aplicación web con VueJs.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+El siguiente diagrama muestra el diseño general de la aplicación.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+```mermaid
+    flowchart
+    App --> Router
+    Router --> AddExplorer
+    Router --> Explorer
+    Router --> ExplorerList
+    Explorer --> ExplorerService
+    AddExplorer --> ExplorerService
+    ExplorerList --> ExplorerService
+    ExplorerService --> http-common
+    http-common --> Api
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+
