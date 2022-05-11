@@ -2,9 +2,9 @@ import { createWebHistory, createRouter } from "vue-router";
 const routes =  [
   {
     path: "/",
-    alias: "/explorers",
-    name: "explorers",
-    component: () => import("./components/explorers/ExplorersList")
+    alias: "/missionCommanders",
+    name: "missioncommander-list",
+    component: () => import("./components/missionCommanders/MissionCommaderList")
   },
   {
     path: "/explorer/:id",
