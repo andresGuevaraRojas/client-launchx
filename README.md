@@ -10,10 +10,17 @@ El siguiente diagrama muestra el diseño general de la aplicación.
     Router --> AddExplorer
     Router --> Explorer
     Router --> ExplorerList
+    Router --> AddMissionCommander
+    Router --> MissionCommander
+    Router --> MissionCommanderList
     Explorer --> ExplorerService
     AddExplorer --> ExplorerService
     ExplorerList --> ExplorerService
+    MissionCommander --> MissionCommanderService
+    MissionCommanderList --> MissionCommanderService
+    AddMissionCommander --> MissionCommanderService
     ExplorerService --> http-common
+    MissionCommanderService --> http-common
     http-common --> Api
 ```
 
